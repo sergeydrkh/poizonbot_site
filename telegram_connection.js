@@ -1,10 +1,10 @@
 Telegram.WebApp.ready(); 
 
 function login() {
-    const dewuLink = document.getElementById('link').value;
-    const dewuSize = document.getElementById('size').value;
-    const dewuCost = document.getElementById('cost').value;
-	const name = document.getElementById('name').value;
+    const dewuLink = document.getElementById('link').value.replaceAll(';', '');
+    const dewuSize = document.getElementById('size').value.replaceAll(';', '');
+    const dewuCost = document.getElementById('cost').value.replaceAll(';', '');
+	const name = document.getElementById('name').value.replaceAll(';', '');
 	let params = new URLSearchParams(location.search);
 	const orderSalt = params.get('order_salt');
 	const menuId = params.get('menu_id');
