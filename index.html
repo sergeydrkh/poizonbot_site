@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poizonbot</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://telegram.org/js/telegram-web-app.js?1"></script> 
+    <script src="telegram_connection.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+    <h2>Вход</h2>
+</div>
+
+
+<div class="d-flex justify-content-center"> <p>Используйте свой акканут Eljur</p></div>
+    
+
+    <div class="d-flex justify-content-center">
+        <form onsubmit="login(); return false;" class="d-flex align-items-start flex-column">
+            <div class="form-floating mb-2">
+                <input required type="text" class="form-control form-control-lg" id="link" placeholder="Link">
+                <label for="link">Ссылка на товар</label>
+            </div>
+
+            <div class="form-floating mb-2">
+                <input required type="text" class="form-control form-control-lg" id="size" placeholder="Size">
+                <label for="size">Размер</label>
+            </div>
+
+            <div class="form-floating mb-2">
+                <input required type="number" class="form-control form-control-lg" id="cost" placeholder="Cost" value="0">
+                <label for="cost">Цена в юанях</label>
+            </div>
+
+            <div class="col-md-12 text-center"><input type="submit" class="btn btn-secondary btn-lg btn-block" value="Добавить"></input></div>
+        </form>
+    </div>
+
+</body>
+</html>
