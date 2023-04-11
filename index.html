@@ -18,6 +18,11 @@
 	
     <div class="d-flex justify-content-center">
         <form onsubmit="login(); return false;" class="d-flex align-items-start flex-column">
+			<div class="form-floating mb-2">
+                <input required type="text" class="form-control form-control-lg" id="name" placeholder="Name">
+                <label for="name">Наименование товара (для удобства)</label>
+            </div>
+		
             <div class="form-floating mb-2">
                 <input required type="text" class="form-control form-control-lg" id="link" placeholder="Link">
                 <label for="link">Ссылка на товар</label>

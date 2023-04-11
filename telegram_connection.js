@@ -4,11 +4,12 @@ function login() {
     const dewuLink = document.getElementById('link').value;
     const dewuSize = document.getElementById('size').value;
     const dewuCost = document.getElementById('cost').value;
+	const name = document.getElementById('name').value;
 	let params = new URLSearchParams(location.search);
 	const orderSalt = params.get('order_salt');
 	const menuId = params.get('menu_id');
 
-    Telegram.WebApp.sendData(`${menuId};addItem;${dewuLink};${dewuSize};${dewuCost};${orderSalt}`);    
+    Telegram.WebApp.sendData(`${menuId};addItem;${name};${dewuLink};${dewuSize};${dewuCost};${orderSalt}`);    
 }
 
 
